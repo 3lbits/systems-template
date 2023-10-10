@@ -1,0 +1,16 @@
+# Basic set up for the nuget- and npm package manager. Configure this file according to: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# and ensure that all dependencies in your project are maintained by Dependabot. Note that you must set the exact location of the package manifests for most package managers (for example, the package.json or Gemfile) through the
+# directory configuration.
+
+version: 2
+updates:
+  # Maintain dependencies for nuget
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  # Maintain dependencies for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
